@@ -23,7 +23,7 @@ The directory structure of a Shared Library repository is as follows:
       
     ├── src                                         (define the custom method)
     │   |__ com
-    |       |__ wexinc
+    |       |__ xor
     |           |__ polyrepo
     │           |   |__ section1.groovy        
     |           |   |__ section2.groovy
