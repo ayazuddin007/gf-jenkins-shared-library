@@ -1,4 +1,4 @@
-# gf-jenkins-shared-library
+# xor-jenkins-shared-library
 
 Jenkins Pipeline Shared Library Template
 ---
