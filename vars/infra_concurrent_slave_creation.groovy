@@ -1,4 +1,4 @@
-import com.wexinc.infra.concurrent_SlaveCreation
+import com.xor.infra.concurrent_SlaveCreation
 
 def call(String clusterRepo)
 {

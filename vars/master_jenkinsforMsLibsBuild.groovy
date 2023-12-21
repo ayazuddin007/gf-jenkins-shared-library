@@ -1,4 +1,4 @@
-import com.wexinc.msLibs.msLibsBuild
+import com.xor.msLibs.msLibsBuild
 
 def call(String jdkVersion) {
 
@@ -7,7 +7,7 @@ def call(String jdkVersion) {
 	pipeline {
 
 		//agent any
-		agent { label 'ifcs-wf-aus-dev-v3-sydney-ec2-slave'}
+		agent { label 'xor-wf-aus-dev-v3-sydney-ec2-slave'}
 		
 		environment {
 			PATH = "/opt/maven/bin:$PATH"

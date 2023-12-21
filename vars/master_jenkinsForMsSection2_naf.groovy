@@ -1,4 +1,4 @@
-import com.wexinc.naf.section2
+import com.xor.naf.section2
 
 def call(List EnvRepo) {
 

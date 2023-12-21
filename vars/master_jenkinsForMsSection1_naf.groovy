@@ -1,5 +1,5 @@
-import com.wexinc.naf.section1
-import com.wexinc.features.jira
+import com.xor.naf.section1
+import com.xor.features.jira
 
 def call(String jdkVersion, List controlRepos) {
 
@@ -10,7 +10,7 @@ def call(String jdkVersion, List controlRepos) {
 
 		//agent any
 		 agent { label 'wfe-poc-frankfurt-ec2-slave'}
-		//agent { label 'ifcs-wfe-dev-frankfurt-ec2-slave'}
+		//agent { label 'xor-wfe-dev-frankfurt-ec2-slave'}
 		
 		environment {
 			PATH = "/opt/maven/bin:$PATH"

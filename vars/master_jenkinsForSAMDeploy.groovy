@@ -1,4 +1,4 @@
-import com.wexinc.sam.samDeploy
+import com.xor.sam.samDeploy
 
 def call(String agentName) {
 

@@ -1,4 +1,4 @@
-import com.wexinc.lamda.lambdaFunctions
+import com.xor.lamda.lambdaFunctions
 
 def call(String agentName) {
 

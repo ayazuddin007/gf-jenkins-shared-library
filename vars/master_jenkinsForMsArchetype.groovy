@@ -1,4 +1,4 @@
-import com.wexinc.archetype.archetype
+import com.xor.archetype.archetype
 
 def call(String jdkVersion) {
 
@@ -7,7 +7,7 @@ def call(String jdkVersion) {
 	pipeline {
 
 		//agent any
-		agent { label 'ifcs-wfe-dev-frankfurt-ec2-slave'}
+		agent { label 'xor-wfe-dev-frankfurt-ec2-slave'}
 		
 		environment {
 			PATH = "/opt/maven/bin:$PATH"

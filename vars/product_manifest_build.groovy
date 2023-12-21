@@ -1,4 +1,4 @@
-import com.wexinc.monorepo.section2
+import com.xor.monorepo.section2
 
 def call(List EnvRepo) {
 

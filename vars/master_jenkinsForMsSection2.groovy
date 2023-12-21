@@ -1,4 +1,4 @@
-import com.wexinc.polyrepo.section2
+import com.xor.polyrepo.section2
 
 def call(List EnvRepo) {
 

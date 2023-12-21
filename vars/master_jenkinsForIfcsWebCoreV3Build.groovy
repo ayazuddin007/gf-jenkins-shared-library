@@ -1,13 +1,13 @@
-import com.wexinc.ifcsWebCoreV3.ifcsWebCoreV3Build
+import com.xor.xorWebCoreV3.xorWebCoreV3Build
 
-def call(String jdkVersion, List ifcsRepos) {
+def call(String jdkVersion, List xorRepos) {
 
-	def ifcsWebCoreV3 = new ifcsWebCoreV3Build(this, env, params, scm, currentBuild)
+	def xorWebCoreV3 = new xorWebCoreV3Build(this, env, params, scm, currentBuild)
 
 	pipeline {
 
 		//agent any
-		agent { label 'ifcs-zen-dev-frankfurt-ec2-slave'}
+		agent { label 'xor-zen-dev-frankfurt-ec2-slave'}
 		
 		environment {
 			PATH = "/opt/maven/bin:$PATH"
@@ -19,15 +19,15 @@ def call(String jdkVersion, List ifcsRepos) {
 		        	tools { jdk "${jdkVersion}" }	
 				steps {
 					script {
-						ifcsWebCoreV3.build_deploy()
+						xorWebCoreV3.build_deploy()
 				     	}
 				}
 			}
 				
-			stage('Cascade to ifcs-server build') {
+			stage('Cascade to xor-server build') {
 				steps {
 					script {
-						ifcsWebCoreV3.cascade(ifcsRepos)
+						xorWebCoreV3.cascade(xorRepos)
 					}	
 				}
 			}

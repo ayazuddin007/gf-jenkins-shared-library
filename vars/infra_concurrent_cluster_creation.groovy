@@ -1,4 +1,4 @@
-import com.wexinc.infra.concurrent_ClusterCreation
+import com.xor.infra.concurrent_ClusterCreation
 
 def call()
 {

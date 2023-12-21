@@ -1,4 +1,4 @@
-import com.wexinc.testing.integrationTest
+import com.xor.testing.integrationTest
 
 def call(String clusterName, String slaveName, String integrationTestRepo, String jdkVersion)
 {

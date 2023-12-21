@@ -1,4 +1,4 @@
-import com.wexinc.liquibase.icpLiquibase
+import com.xor.liquibase.icpLiquibase
 
 def call(String jdkVersion, List repo = null) {
 
@@ -7,7 +7,7 @@ def call(String jdkVersion, List repo = null) {
 	pipeline {
 
 		//agent any
-		agent { label 'ifcs-wfe-dev-frankfurt-ec2-slave'}
+		agent { label 'xor-wfe-dev-frankfurt-ec2-slave'}
 		
 		environment {
 			PATH = "/opt/maven/bin:$PATH"

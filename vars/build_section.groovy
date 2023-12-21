@@ -1,5 +1,5 @@
-import com.wexinc.monorepo.section1
-import com.wexinc.features.lastChanges
+import com.xor.monorepo.section1
+import com.xor.features.lastChanges
 
 def call(String jdkVersion = null, List controlRepos) {
 

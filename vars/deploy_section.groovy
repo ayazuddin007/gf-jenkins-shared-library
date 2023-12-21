@@ -1,6 +1,6 @@
-import com.wexinc.monorepo.section3
-import com.wexinc.features.ansibleRepo
-import com.wexinc.features.gchatNotification
+import com.xor.monorepo.section3
+import com.xor.features.ansibleRepo
+import com.xor.features.gchatNotification
 	
 def call(String clusterName, String slaveName) {
 	
